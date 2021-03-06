@@ -31,7 +31,7 @@ class ParentWindow(Frame):
         self.btn_browse1.grid(row=0, column = 0, padx=(15, 25), pady=(45, 10),sticky=W)
         self.btn_browse2 = tk.Button(self.master,width=12, height=1,text='Browse...',command=lambda: getDst(self))
         self.btn_browse2.grid(row=1, column = 0, padx=(15, 25), pady=(10, 10),sticky=W)
-        self.btn_checkFiles = tk.Button(self.master,width=12, height=2,text='COPY FILES',command=lambda: copyFile())
+        self.btn_checkFiles = tk.Button(self.master,width=12, height=2,text='COPY FILES',command=lambda: copyFile(self))
         self.btn_checkFiles.grid(row=2, column = 0, padx=(15,25), pady=(5, 20),sticky=E)
         self.btn_close = tk.Button(self.master,width=12, height=2,text='CLOSE',command=lambda: askExit(self))
         self.btn_close.grid(row=2, column = 1, padx=(0,25), pady=(5, 20),sticky=E)
@@ -59,18 +59,21 @@ def askExit(self):
 now = dt.datetime.now()
 ago = now-dt.timedelta(hours=24)
 strftime = "%H:%M %m/%d/%Y"
-created = '/Users/Owner/Desktop/NewModified/'
-dest = '/Users/Owner/Desktop/HomeOffice/'
 
-def copyFile():
-    for root, dirs, files in os.walk(created):
+def copyFile(self):
+    source = self.txtbox1.get()
+    print("SOURCE FOLDER: ", source)
+    destination = self.txtbox2.get()
+    print("DESTINATION FOLDER: ", destination)
+    for root, dirs, files in os.walk(source):
         for fname in files:
-            path = os.path.join(root, fname)    #   JOIN FILE SYSTEM PATH WITH FILE NAME
-            st = os.stat(path)                  #   RETURN STAT INFO REGARDING SPECIFIED PATH
+            src = os.path.join(source, fname)    #   JOIN FILE SYSTEM PATH WITH FILE NAME
+            dst= os.path.join(destination, fname)
+            st = os.stat(src)                  #   RETURN STAT INFO REGARDING SPECIFIED PATH
             mtime = dt.datetime.fromtimestamp(st.st_mtime)  #   MODIFIED TIME
             if mtime > ago:                     #   IF MODIFED IN THE LAST 24 HOURS
                 print("CONFIRMED NEW OR EDITED FILED COPIED:  ", fname, " LAST MODIFIED: ", mtime.strftime("%H:%M %m/%d/%Y"))
-                shutil.copy(path, dest) 
+                shutil.copy(src, dst) 
 
 
 
@@ -79,4 +82,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     App = ParentWindow(root)
     root.mainloop()
-                
