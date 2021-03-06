@@ -72,7 +72,7 @@ def copyFile(self):
             st = os.stat(src)                  #   RETURN STAT INFO REGARDING SPECIFIED PATH
             mtime = dt.datetime.fromtimestamp(st.st_mtime)  #   MODIFIED TIME
             if mtime > ago:                     #   IF MODIFED IN THE LAST 24 HOURS
-                print("CONFIRMED NEW OR EDITED FILED COPIED:  ", fname, " LAST MODIFIED: ", mtime.strftime("%H:%M %m/%d/%Y"))
+                print("CONFIRMED NEW OR EDITED FILE COPIED:  ", fname, " LAST MODIFIED: ", mtime.strftime("%H:%M %m/%d/%Y"))
                 shutil.copy(src, dst) 
 
 
