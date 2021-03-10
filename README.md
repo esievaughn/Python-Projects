@@ -1,10 +1,10 @@
 ### PYTHON PROJECTS ###
 ---
 ##### Basic python programs using modules like tkinter, datetime, pytz, sqlite3 and os #####
-  * FILE TRANSFER PROGRAM [Markdown - Link](#file-transfer-progran)
+  * [FILE TRANSFER PROGRAM] (#file-transfer-program)
   * NICE/MEAN GAME
   * STUDENT TRACKER
-  * CHALLENGE: DATETIME
+  * [CHALLENGE: DATETIME] (#datetime)
   * DJANGO CHECKBOOK
 ---
 
@@ -20,5 +20,5 @@ A basic app to input, edit, and retrieve student information within a database.
 ####  [CHALLENGE: DATETIME](https://github.com/esievaughn/Python-Projects/blob/main/Python-Challenges/DateTimeChallenge.py) ####
 A script that converts timezones to display to a user whether or not a individual branch of a company with locations based in three different time zones was open. 
 
-#### [DJANGO CHECKBOOK](https://github.com/esievaughn/DjangoCheckbook) ####
+#### #datetime [DJANGO CHECKBOOK](https://github.com/esievaughn/DjangoCheckbook) ####
 An app that allows users to create new accounts or choose from a previously store account, create new transactions, and store the transactions and overall balance within a database. 
