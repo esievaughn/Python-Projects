@@ -1,11 +1,6 @@
 ### PYTHON PROJECTS ###
 ---
 ##### Basic python programs using modules like tkinter, datetime, pytz, sqlite3 and os #####
-  * #FILE-TRANSFER-PROGRAM
-  * NICE/MEAN GAME
-  * STUDENT TRACKER
-  * CHALLENGE: DATETIME
-  * DJANGO CHECKBOOK
 ---
 
 #### [FILE TRANSFER PROGRAM](https://github.com/esievaughn/Python-Projects/tree/main/FileTransfer)(#file-transfer-program) ####
