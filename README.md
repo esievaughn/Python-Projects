@@ -1,7 +1,7 @@
 ### PYTHON PROJECTS ###
 ---
 ##### Basic python programs using modules like tkinter, datetime, pytz, sqlite3 and os #####
-  * [FILE TRANSFER PROGRAM] (#file-transfer-program)
+  * FILE TRANSFER PROGRAM
   * NICE/MEAN GAME
   * STUDENT TRACKER
   * [CHALLENGE: DATETIME] (#datetime)
@@ -9,9 +9,9 @@
 ---
 
 #### [FILE TRANSFER PROGRAM](https://github.com/esievaughn/Python-Projects/tree/main/FileTransfer) ####
-An app with a GUI that allows users to copy any newly created or modified files within the last 24hrs from their chosen directory to a new directory.
+#file-transfer-program An app with a GUI that allows users to copy any newly created or modified files within the last 24hrs from their chosen directory to a new directory.
 
-#### #file-transfer-program [NICE/MEAN GAME](https://github.com/esievaughn/Python-Projects/tree/main/NiceMeanGame) ####
+#### [NICE/MEAN GAME](https://github.com/esievaughn/Python-Projects/tree/main/NiceMeanGame) ####
 A basic game app that allows users to choose to be mean or nice given a scenario with the ending result differing based on user's input. The simple program demonstrates how to pass a variable and return a function within python.
 
 #### [STUDENT TRACKER](https://github.com/esievaughn/Python-Projects/tree/main/Student-Tracker) ####
