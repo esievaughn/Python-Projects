@@ -8,8 +8,8 @@
   * DJANGO CHECKBOOK
 ---
 
-#### [FILE TRANSFER PROGRAM](https://github.com/esievaughn/Python-Projects/tree/main/FileTransfer) #file-transfer-program ####
-#file-transfer-program An app with a GUI that allows users to copy any newly created or modified files within the last 24hrs from their chosen directory to a new directory.
+#### [FILE TRANSFER PROGRAM](https://github.com/esievaughn/Python-Projects/tree/main/FileTransfer)(#file-transfer-program) ####
+An app with a GUI that allows users to copy any newly created or modified files within the last 24hrs from their chosen directory to a new directory.
 
 #### [NICE/MEAN GAME](https://github.com/esievaughn/Python-Projects/tree/main/NiceMeanGame) ####
 A basic game app that allows users to choose to be mean or nice given a scenario with the ending result differing based on user's input. The simple program demonstrates how to pass a variable and return a function within python.
